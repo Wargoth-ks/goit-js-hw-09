@@ -1,7 +1,6 @@
 import { Notify } from 'notiflix/build/notiflix-notify-aio';
 
 const btn = document.querySelector('.form');
-console.dir(btn);
 
 function createPromise(position, delay) {
     return new Promise((resolve, reject) => {
@@ -38,4 +37,5 @@ function onClick(event) {
         event.currentTarget.reset();
     }
 }
+
 btn.addEventListener('click', onClick);
